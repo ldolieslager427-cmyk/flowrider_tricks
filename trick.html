@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trick Details</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="back-button">⬅ Back to Tricks</a>
+  <h1 id="name"></h1>
+  <p>Level: <span id="level"></span></p>
+  <button id="theme-toggle">Toggle Dark/Light</button>
+</header>
+
+<main>
+  <section>
+    <h3>How to do it</h3>
+    <p id="how"></p>
+  </section>
+
+  <section>
+    <h3>Prerequisites <span id="toggle-pre" class="toggle-button">[Show]</span></h3>
+    <ul id="pre" class="collapsed"></ul>
+  </section>
+
+  <section>
+    <h3>Tips & Common Mistakes <span id="toggle-tips" class="toggle-button">[Show]</span></h3>
+    <ul id="tips" class="collapsed">
+      <li>Stay centered on your board.</li>
+      <li>Keep eyes on the wave direction.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h3>Video</h3>
+    <iframe id="video" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section>
+    <button id="learned-btn">Mark as Learned</button>
+  </section>
+</main>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
