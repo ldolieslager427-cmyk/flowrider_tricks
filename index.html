@@ -2,36 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>FlowRider Tricks</title>
+  <title>Flowboard Tricks</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>Flowboard Tricks</h1>
+    <button id="dark-light-toggle">Dark/Light</button>
+    <input type="text" id="search-bar" placeholder="Search Tricks">
+  </header>
 
-<header>
-  <h1>FlowRider Tricks</h1>
-  <p>Click a trick to see how to do it, prerequisites, and a video!</p>
-  <div class="controls">
-    <input type="text" id="search" placeholder="Search tricks..." />
-    <button id="theme-toggle">Toggle Dark/Light</button>
-  </div>
-</header>
+  <main>
+    <div class="buttons">
+      <button class="category-btn" data-category="flowboard">Flowboard</button>
+      <button class="category-btn" data-category="bodyboard">Bodyboard</button>
+      <button class="category-btn" data-category="standup">Standup</button>
+    </div>
 
-<main>
-  <section>
-    <h2>🏄‍♂️ Bodyboard</h2>
-    <div id="bodyboard"></div>
-  </section>
+    <div id="trick-list"></div>
+  </main>
 
-  <section>
-    <h2>🏂 Stand-Up</h2>
-    <div id="standup"></div>
-  </section>
-</main>
-
-<button id="back-top">⬆ Back to Top</button>
-
-<script src="data.js"></script>
-<script src="script.js"></script>
-
+  <script src="data.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
