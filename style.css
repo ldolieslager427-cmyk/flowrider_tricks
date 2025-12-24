@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #0b1c2d, #071221);
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+header, main, section {
+  max-width: 900px;
+  margin: auto;
+  padding: 10px;
+}
+
+h1, h2, h3 {
+  color: #66ccff;
+  margin-bottom: 10px;
+}
+
+input#search {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  margin-right: 10px;
+  width: 60%;
+  max-width: 300px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 8px 0;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #66ccff;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  transition: max-height 0.3s ease;
+}
+
+.collapsed {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.toggle-button {
+  cursor: pointer;
+  font-size: 14px;
+  color: #f1c40f;
+  margin-left: 8px;
+}
+
+iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: transform 0.2s;
+}
+
+iframe:hover {
+  transform: scale(1.02);
+}
+
+#back-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  border-radius: 50%;
+  background-color: #3498db;
+  color: #fff;
+  display: none;
+}
+
+body.light {
+  background: #f0f0f0;
+  color: #0b1c2d;
+}
+
+body.light button {
+  color: #0b1c2d;
+}
+
+body.light input#search {
+  color: #0b1c2d;
+}
+
+@media(max-width: 600px){
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+  iframe {
+    height: 200px;
+  }
+  input#search {
+    font-size: 14px;
+  }
+}
